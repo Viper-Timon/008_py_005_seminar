@@ -48,8 +48,8 @@ def rle_ext(txt):
             dif = i+2
             txt_out += txt[dif:dif+int(txt[i+1])]
         else:
-            if (txt[i].isdigit()==True) \
-                and (txt[i-1]!='-'):
+            if (txt[i].isdigit() == True) \
+                    and (txt[i-1] != '-'):
                 txt_out += int(txt[i])*txt[i+1]
 
     return txt_out
